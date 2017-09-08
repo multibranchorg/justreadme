@@ -24,6 +24,12 @@ pipeline {
           }
         }
         stage('fdsafsda') {
+          agent {
+            node {
+              label 'ttt'
+            }
+            
+          }
           steps {
             sh 'echo 42'
           }
