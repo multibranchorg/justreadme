@@ -5,8 +5,7 @@ pipeline {
       parallel {
         stage('first') {
           steps {
-            sh '''ls -lah
-'''
+            sh 'env'
           }
         }
         stage('second') {
